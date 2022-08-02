@@ -1,0 +1,33 @@
+.error{
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    margin-bottom: 20px;
+}
+.error section{
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    width: 95%;
+}
+.error section img{
+    border-radius: 10px;
+}
+.error pre{
+    width: 99vw;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    padding: 20px;
+
+    background: gainsboro;
+
+    border: 10px solid black;
+    border-radius: 10px;
+}

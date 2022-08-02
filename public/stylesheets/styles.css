@@ -1,0 +1,7 @@
+@import './normalize.css';
+@import './general.css';
+@import "./error.css";
+@import './forms.css';
+@import './home.css';
+@import './detail.css';
+@import './register.css';

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craftsy | Home</title>
+    <script src="https://kit.fontawesome.com/ae7c764a16.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/glider.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+
+<body class="home">
+    <header class="home__header">
+        <div class="home__header__logo">
+            <img src="/images/logo.png" alt="">
+        </div>
+        <button class="home__header__burger" onclick="document.querySelector('.home__header__nav').classList.toggle('show')"><i class="fa fa-bars"></i> Menu </button>        <nav class="home__header__nav">
+            <ul class="home__header__nav--menu">
+                <li>
+                    <a href="">Computadoras</a>
+                    <hr>
+                </li>
+                <li>
+                    <a href="">Tablets</a>
+                    <hr>
+                </li>
+                <li>
+                    <a href="">Celulares</a>
+                    <hr>
+                </li>
+            </ul>
+            <ul class="home__header__nav--user">
+                <li>
+                    <a href="/users/login">Login</a>
+                    <hr>
+                </li>
+                <li>
+                    <a href="/users/register">Registro</a>
+                    <hr>
+                </li>
+            </ul>
+        </nav>
+        <form action="" class="home__header__form--search">
+            <input type="text">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </header>
+      <section class="home__section--banner">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item home__main__img--banner active" id="img-banner0">
+                  </div>
+                  <div class="carousel-item home__main__img--banner" id="img-banner1">
+                  </div>
+                  <div class="carousel-item home__main__img--banner" id="img-banner2">
+                  </div>
+                  <div class="carousel-item home__main__img--banner" id="img-banner3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+    <main class="home__main">
+      
+        <section class="home__main__section--products general__main__section">
+            <article class="home__main__section__article--product">
+                
+                <figure>
+                    <a href="/products/product-detail">
+                    <img src="/images/img-phone-01.jpg" alt="">
+                </a>
+                </figure>
+                <h2>Nombre del producto</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quia, eius autem veniam accusantium
+                    maiores doloribus aliquid possimus quae debitis?</p>
+                <a class="general__button__product " href="/product-detail">ver más</a>
+            </article>
+            <article class="home__main__section__article--product">
+                <figure>
+                    <img src="/images/img-phone-02.jpg" alt="">
+                </figure>
+                <h2>Nombre del producto</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quia, eius autem veniam accusantium
+                    maiores doloribus aliquid possimus quae debitis?</p>
+                <a class="general__button__product " href="">ver más</a>
+            </article>
+            <article class="home__main__section__article--product">
+                <figure>
+                    <img src="/images/img-phone-03.jpg" alt="">
+                </figure>
+                <h2>Nombre del producto</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quia, eius autem veniam accusantium
+                    maiores doloribus aliquid possimus quae debitis?</p>
+                <a class="general__button__product " href="">ver más</a>
+            </article>
+            <article class="home__main__section__article--product">
+                <figure>
+                    <img src="/images/img-phone-01.jpg" alt="">
+                </figure>
+                <h2>Nombre del producto</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quia, eius autem veniam accusantium
+                    maiores doloribus aliquid possimus quae debitis?</p>
+                <a class="general__button__product " href="">ver más</a>
+            </article>
+            <article class="home__main__section__article--product">
+                <figure>
+                    <img src="/images/img-phone-02.jpg" alt="">
+                </figure>
+                <h2>Nombre del producto</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quia, eius autem veniam accusantium
+                    maiores doloribus aliquid possimus quae debitis?</p>
+                <a class="general__button__product " href="">ver más</a>
+            </article>
+            <article class="home__main__section__article--product">
+                <figure>
+                    <img src="/images/img-phone-03.jpg" alt="">
+                </figure>
+                <h2>Nombre del producto</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quia, eius autem veniam accusantium
+                    maiores doloribus aliquid possimus quae debitis?</p>
+                <a class="general__button__product " href="">ver más</a>
+            </article>
+            <article class="home__main__section__article--carousel">
+                <div class="glider-contain">
+                    <div class="glider">
+                      <div><img src="/images/celulares/celu1.jpeg" alt=""></div>
+                      <div><img src="/images/celulares/celu2.png" alt=""></div>
+                      <div><img src="/images/celulares/celu3.png" alt=""></div>
+                      <div><img src="/images/celulares/celu4.jpg" alt=""></div>
+                      <div><img src="/images/celulares/celu5.jpg" alt=""></div>
+                      <div><img src="/images/celulares/celu6.jpg" alt=""></div>
+                      <div><img src="/images/celulares/celu7.png" alt=""></div>
+                      <div><img src="/images/celulares/celu8.jpg" alt=""></div>
+
+                    </div>
+                  
+                    <button aria-label="Previous" class="glider-prev">«</button>
+                    <button aria-label="Next" class="glider-next">»</button>
+                    <div role="tablist" class="dots"></div>
+                  </div>
+            </article>
+        </section>
+        <aside class="home__main__aside">
+            <h2>Tutoriales</h2>
+            <section class="home__main__aside__section--tutoriales">
+                <article>
+                    <img src="/images/aside-01.jpg" alt="">
+                    <p>Título del tutorial de reparación</p>
+                </article>
+                <article>
+                    <img src="/images/aside-02.jpg" alt="">
+                    <p>Título del tutorial de reparación</p>
+                </article>
+                <article>
+                    <img src="/images/aside-03.jpg" alt="">
+                    <p>Título del tutorial de reparación</p>
+                </article>
+                <article>
+                    <img src="/images/aside-04.jpg" alt="">
+                    <p>Título del tutorial de reparación</p>
+                </article>
+            </section>
+            <h2>Publicidad</h2>
+            <section class="home__main__aside__section--publicidad">
+                <article>
+                    <img src="/images/ad-01.jpg" alt="">
+                    <img src="/images/ad-02.jpg" alt="">
+                </article>
+
+            </section>
+        </aside>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="/javascripts/glider.js"></script>
+    <script>
+        window.addEventListener('load', function(){
+        new Glider(document.querySelector('.glider'), {
+            slidesToShow : 1,
+            dots: '.dots',
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            },
+            itemWidth: 300,
+            draggable : true,
+            responsive: [
+    {
+      // screens greater than >= 768px
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        itemWidth: 150,
+        duration: 0.25
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        itemWidth: 150,
+        duration: 0.25
+      }
+    }
+  ]
+        })
+        })
+    </script>
+
+</body>
+
+</html>
