@@ -1,36 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Craftsy | Product Detail</title>
-    <script src="https://kit.fontawesome.com/ae7c764a16.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/stylesheets/styles.css">
-</head>
+<%- include("./partials/head") %>
 
 <body class="detail">
-    <header class="home__header">
-        <div class="home__header__logo">
-            <a href="/"><img src="/images/logo.png" alt=""></a>
-        </div>
-        <button class="home__header__burger" onclick="document.querySelector('.home__header__nav').classList.toggle('show')"><i class="fa fa-bars"></i> Menu </button>                <nav class="home__header__nav">
-            <ul class="home__header__nav--menu">
-                <li><a href="">Computadoras</a></li>
-                <li><a href="">Tablets</a></li>
-                <li><a href="">Celulares</a></li>
-            </ul>
-            <ul class="home__header__nav--user">
-                <li><a href="/login">Login</a></li>
-                <li><a href="/register">Registro</a></li>
-            </ul>
-            <form action="" class="home__header__form--search">
-                <input type="text">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-        </nav>
-    </header>
+    <%- include("./partials/header") %> 
     <main class="detail__main">
         <section class="detail__main__section general__main__section">
             <article class="detail__main__section__article">

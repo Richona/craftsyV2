@@ -1,33 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Craftsy | Home</title>
-    <script src="https://kit.fontawesome.com/ae7c764a16.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/stylesheets/styles.css">
-</head>
+<%- include("./partials/head") %>
 
 <body class="home">
-    <header class="home__header">
-        <div class="home__header__logo">
-            <img src="/images/logo.png" alt="">
-        </div>
-        <button class="home__header__burger"><i class="fa fa-bars"></i> Menu </button>
-        <nav class="home__header__nav">
-            <ul class="home__header__nav--menu">
-                <li><a href="">Computadoras</a></li>
-                <li><a href="">Tablets</a></li>
-                <li><a href="">Celulares</a></li>
-            </ul>
-            <ul class="home__header__nav--user">
-                <li><a href="/login">Login</a></li>
-                <li><a href="/register">Registro</a></li>
-            </ul>
-        </nav>
-    </header>
+    <%- include("./partials/header") %> 
     <main class="home__main">
         <section class="home__main__section--products general__main__section">
         <h1>Terminos y condiciones</h1>
