@@ -4,20 +4,22 @@
     </div>
     <button class="home__header__burger" onclick="document.querySelector('.home__header__nav').classList.toggle('show')"><i class="fa fa-bars"></i> Menu </button>        <nav class="home__header__nav">
         <ul class="home__header__nav--menu">
+            <!-- Metodo filter productsController -->
             <li>
-                <a href="">Computadoras</a>
+                <a href="/products/filter?section=popular">Populares</a>
                 <hr>
             </li>
             <li>
-                <a href="">Tablets</a>
+                <a href="/products/filter?section=temporada">Temporada</a>
                 <hr>
             </li>
-            <li>
-                <a href="">Celulares</a>
-                <hr>
-            </li>
+            <!--  -->
         </ul>
         <ul class="home__header__nav--user">
+            <li>
+                <a href="/products/add">Agregar</a>
+                <hr>
+            </li>
             <li>
                 <a href="/users/login">Login</a>
                 <hr>
@@ -28,8 +30,10 @@
             </li>
         </ul>
     </nav>
-    <form action="" class="home__header__form--search">
-        <input type="text">
+    <!-- metodo SEARCH productsController -->
+    <form action="/products/search" class="home__header__form--search" method="GET">
+        <input type="text" name="keywords">
         <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
+    <!--  -->
 </header>

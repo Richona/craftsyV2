@@ -1,7 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
-const {index,terms} = require("../controllers/indexController")
+const {index,terms} = require('../controllers/indexController')
 
-/* GET home page. */
-module.exports = router.get('/', index).get('/terms', terms);
+/* / */
+router
+    .get('/', index)
+    .get('/terms', terms)
+
+module.exports = router;

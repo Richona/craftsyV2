@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<%- include("./partials/head") %>
+    <%- include('./partials/head',{
+        title : 'Register'
+    })  %> 
+
 
 <body class="register">
-    <%- include("./partials/header") %> 
+    <%- include('./partials/header')  %> 
+
     <main class="register__main">
         <section class="register__main__section general__main__section">
           <h1 class="form__title">Registrate</h1>
@@ -50,7 +54,7 @@
                             <label class="form__label--small" for="terminos">Acepto los <a href="/terms" target="_blank">términos y condiciones</a></label>
                         </div>
                         <div class="form__box--flex">
-                            <small class="form__text--error">Debes aceptar los términos y condiciones</small>
+                            <a href="/terms"><small class="form__text--error"> Debes aceptar los términos y condiciones</small></a> 
                         </div>
                     </div>
                 </div>

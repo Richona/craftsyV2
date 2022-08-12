@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<%- include("./partials/head") %> 
+<%- include('./partials/head',{
+    title: 'Home'
+})  %> 
 
 <body class="home">
-    <%- include("./partials/header") %> 
+    <%- include('./partials/header')  %> 
+
       <section class="home__section--banner">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-indicators">
@@ -36,63 +39,20 @@
     <main class="home__main">
       
         <section class="home__main__section--products general__main__section">
-            <article class="home__main__section__article--product">
-                
+          <!-- metodo INDEX indexControllers -->
+            <% products.forEach(({id,name,image}) => { %>
+               <article class="home__main__section__article--product">
                 <figure>
-                    <a href="/products/product-detail">
-                    <img src="/images/img-phone-01.jpg" alt="">
-                </a>
+                    <a href="/product-detail"><img src="/images/<%= image %>" alt=""></a>
                 </figure>
-                <h2>Nombre del producto</h2>
+                <h2><%= name %> </h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quia, eius autem veniam accusantium
                     maiores doloribus aliquid possimus quae debitis?</p>
-                <a class="general__button__product " href="/product-detail">ver más</a>
+                <a class="general__button__product " href="/products/detail/<%= id %>">ver más</a>
             </article>
-            <article class="home__main__section__article--product">
-                <figure>
-                    <img src="/images/img-phone-02.jpg" alt="">
-                </figure>
-                <h2>Nombre del producto</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quia, eius autem veniam accusantium
-                    maiores doloribus aliquid possimus quae debitis?</p>
-                <a class="general__button__product " href="">ver más</a>
-            </article>
-            <article class="home__main__section__article--product">
-                <figure>
-                    <img src="/images/img-phone-03.jpg" alt="">
-                </figure>
-                <h2>Nombre del producto</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quia, eius autem veniam accusantium
-                    maiores doloribus aliquid possimus quae debitis?</p>
-                <a class="general__button__product " href="">ver más</a>
-            </article>
-            <article class="home__main__section__article--product">
-                <figure>
-                    <img src="/images/img-phone-01.jpg" alt="">
-                </figure>
-                <h2>Nombre del producto</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quia, eius autem veniam accusantium
-                    maiores doloribus aliquid possimus quae debitis?</p>
-                <a class="general__button__product " href="">ver más</a>
-            </article>
-            <article class="home__main__section__article--product">
-                <figure>
-                    <img src="/images/img-phone-02.jpg" alt="">
-                </figure>
-                <h2>Nombre del producto</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quia, eius autem veniam accusantium
-                    maiores doloribus aliquid possimus quae debitis?</p>
-                <a class="general__button__product " href="">ver más</a>
-            </article>
-            <article class="home__main__section__article--product">
-                <figure>
-                    <img src="/images/img-phone-03.jpg" alt="">
-                </figure>
-                <h2>Nombre del producto</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quia, eius autem veniam accusantium
-                    maiores doloribus aliquid possimus quae debitis?</p>
-                <a class="general__button__product " href="">ver más</a>
-            </article>
+            <% }) %>
+          <!--  -->
+          
             <article class="home__main__section__article--carousel">
                 <div class="glider-contain">
                     <div class="glider">
@@ -104,7 +64,6 @@
                       <div><img src="/images/celulares/celu6.jpg" alt=""></div>
                       <div><img src="/images/celulares/celu7.png" alt=""></div>
                       <div><img src="/images/celulares/celu8.jpg" alt=""></div>
-
                     </div>
                   
                     <button aria-label="Previous" class="glider-prev">«</button>
@@ -139,7 +98,6 @@
                     <img src="/images/ad-01.jpg" alt="">
                     <img src="/images/ad-02.jpg" alt="">
                 </article>
-
             </section>
         </aside>
     </main>
@@ -147,6 +105,10 @@
     <script src="/javascripts/glider.js"></script>
     <script>
         window.addEventListener('load', function(){
+            const myCarouselElement = document.querySelector('#carouselExampleIndicators')
+            const carousel = new bootstrap.Carousel(myCarouselElement, {
+            interval: 5000,
+})
         new Glider(document.querySelector('.glider'), {
             slidesToShow : 1,
             dots: '.dots',
@@ -180,7 +142,5 @@
         })
         })
     </script>
-
 </body>
-
 </html>

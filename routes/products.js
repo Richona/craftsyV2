@@ -1,6 +1,17 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-const {productDetail}=require("../controllers/productsController")
+const {detail, filter, search, add, store} = require('../controllers/productsController');
 
-module.exports = router.get('/product-detail', productDetail);
+/* /products */
+
+router
+    .get('/add',add)
+    .post('/add',store)
+    .get('/detail/:id',detail)
+    .get('/filter',filter)
+    .get('/search',search)
+
+
+
+module.exports = router;
