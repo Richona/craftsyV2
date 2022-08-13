@@ -20,10 +20,10 @@
                 </div>
             </article>
             <div class="detail__main__section--content">
-                <!-- metodo DETAIL productsController -->
                 <h2><%= product.name %></h2>
                 <div class="d-flex align-items-center gap-2">
                     <% if (product.discount > 0) { %>
+                        <!-- Si el descuento es mayor a 0 entra -->
                         <p>U$S</p><h3><%= (product.price) - (product.price * product.discount / 100) %></h3> <p class="text-decoration-line-through text-danger">u$s<%= product.price %></p>
                     <% }else{ %>
                         <p>U$S</p><h3><%= product.price %></h3>
@@ -34,8 +34,13 @@
                 <% } %>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quia, eius autem veniam accusantium
                     maiores doloribus aliquid possimus quae debitis?</p>
-                <a class="general__button__product " href="">Añadir al carrito</a>
-                <!--  -->
+                    <div class="d-flex gap-2 justify-content-end">
+                        <a class="btn btn-success " href="/products/edit/<%= product.id %>">Editar</a>
+                        <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
+                            <button class="btn btn-danger " type="submit">Eliminar</button>
+                        </form>
+                    </div>
+              
             </div>
         </section>
     </main>

@@ -9,8 +9,8 @@
     <%- include('./partials/header')  %> 
           
     <main class="row mx-auto mt-5">
-        <!-- metodo SEARCH productsController -->
         <% if (products.length > 0) { %>
+            <!-- Si hay un producto entra -->
             <% products.forEach(({id,name,image}) => { %>
                 <section class="col-12 col-md-3 col-lg-4 g-2">
                        <article class="card">
@@ -28,10 +28,9 @@
                 </section>
                 <% }) %>
         <% }else{ %>
-    
+            <!-- Sino muestra esto -->
             <div class="alert alert-warning">No hay productos para la búsqueda <span class="fw-bold"> <%= keywords %></span></div>
         <% } %>
-        <!--  -->
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
